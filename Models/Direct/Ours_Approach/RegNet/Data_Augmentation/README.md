@@ -11,4 +11,3 @@ DATA6 - RandomHorizontalFlip(0.5)
 DATA7 - RandomVerticalFlip(0.5)
 
 DATA8 - RandomCrop(224, padding=28) + RandomHorizontalFlip(0.5)  
-DATA9 - RandomCrop(224, padding=28) + RandomVerticalFlip(0.5)
