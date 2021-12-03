@@ -22,9 +22,10 @@ The structure of the repository is organized as:
               
      -OldData
             - 4+1.csv
-      -GetData.py
-      -GetShotLists.py
-      -ShotList.csv
+            
+     -GetData.py
+     -GetShotLists.py
+     -ShotList.csv
 
  
  -Models
@@ -90,8 +91,13 @@ The structure of the repository is organized as:
 
 1. Data Preprocessing & Datasets
 
+Please add descriptions that help the reader locate the relevant implementation of the report in the github
+
 
 2. Experiments & Models
+Please add descriptions that help the reader locate the relevant implementation in the github
+
 
 ## Citations
+Please add citations if the Code was borrowed from someplace else
 
