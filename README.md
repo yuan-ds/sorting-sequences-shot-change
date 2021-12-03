@@ -1,12 +1,14 @@
 # Shot-Change-Sequence-Detection
+## Result & Repository structure
 Group Project for CMU 11-785 Deep Learning Course
 
 The result of the experiments can be found here: https://drive.google.com/drive/folders/19XuANNjeX2vZKdw_qNFYezXfkRS6wdrM
 
 The structure of the repository is organized as:
 
--Data 
-      -NewData
+  -Data 
+  
+       -NewData
               - 1+1
                    -1+1.csv
               - 2+1
@@ -24,9 +26,12 @@ The structure of the repository is organized as:
       -GetShotLists.py
       -ShotList.csv
 
--Models
-     -Direct
-           -Baseline_Approach
+ 
+ -Models
+ 
+    -Direct
+   
+          -Baseline_Approach
               -EfficientNetB0
                     -EfficientNet_12channel_sliced .ipynb	
                     -EfficientNet_6channel_sliced.ipynb
@@ -75,18 +80,18 @@ The structure of the repository is organized as:
                    -Resnet34_9channels_direct.ipynb
                    -Resnet34_18channels_direct.ipynb
      
-   -Pairwise
+    -Pairwise
        -EfficientNet_Pairwise_4+1.ipynb	
        -Resnet34_Pairwise_4+1.ipynb
 
 
 
-# Descriptions
+## Descriptions
 
 1. Data Preprocessing & Datasets
 
 
 2. Experiments & Models
 
-3. Citations
+## Citations
 
