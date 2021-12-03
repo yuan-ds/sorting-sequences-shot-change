@@ -34,7 +34,7 @@ The structure of the repository is organized as:
    
           -Baseline_Approach
               -EfficientNetB0
-                    -EfficientNet_12channel_sliced .ipynb	
+                    -EfficientNet_12channel_sliced.ipynb	
                     -EfficientNet_6channel_sliced.ipynb
                     -EfficientNet_15channel_sliced.ipynb
                     -EfficientNet_9channel_sliced.ipynb
