@@ -101,5 +101,5 @@ Please add descriptions that help the reader locate the relevant implementation 
 
 ## Citations
 
-Please add citations if the Code was borrowed from someplace else
+EfficientNet from scratch reference: https://github.com/WZMIAOMIAO/deep-learning-for-image-processing/tree/master/pytorch_classification/Test9_efficientNet
 
