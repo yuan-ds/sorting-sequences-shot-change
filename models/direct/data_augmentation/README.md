@@ -1,5 +1,5 @@
 # Data Augmentation
-Here are the list of data augmentation techniques we explored and their corresponding abbreviations:
+Here is the list of data augmentation techniques we explored and their corresponding abbreviations:
 - ``DATA1``: Brightness=0.3   
 - ``DATA2``: Contrast=0.3  
 - ``DATA3``: Saturation=0.3  
