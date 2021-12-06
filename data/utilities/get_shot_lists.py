@@ -20,3 +20,7 @@ class GetShotLists:
             shot_list.append(shots)    
         return shot_list
         
+
+shot_object = GetShotLists("knnw_labels.csv")
+shot_list = shot_object.getshotlist()
+

@@ -45,7 +45,7 @@ numFrames = 5 # number of frames from the same shot
 nextShotSize = 80 
 
 currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
-shot_list_path = currentdir + '/ShotList.csv'
+shot_list_path = currentdir + '/shot_list.csv'
 
 gsl = GetShotLists(shot_list_path)
 shotList = gsl.getshotlist()
