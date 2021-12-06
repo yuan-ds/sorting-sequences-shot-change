@@ -1,105 +1,30 @@
-# Shot-Change-Sequence-Detection
-## Result & Repository structure
-Group Project for CMU 11-785 Deep Learning Course
+# Entropy-Optimal Sorting For Random-Shuffled Sequences With Shot Change Robustness
+Final Project for CMU 11-785 Deep Learning  
+Team 17: I-Tsun Cheng, Tz-Ruei Liu, Yuanyuan Wang, Tianrun Wang
 
-The result of the experiments can be found here: https://drive.google.com/drive/folders/19XuANNjeX2vZKdw_qNFYezXfkRS6wdrM
+This is the official codebase for our project. The code can be structured into two components: ``Data`` and ``Models``.
 
-The structure of the repository is organized as:
+## Data
+The ``data`` folder contains the following three folders:
+- ``data``: the datasets used for different input sequence configurations for our main experiments (1+1, 2+1, 3+1, 4+1, 5+1)
+- ``utilities``: the data utilties used for generating the datasets
 
-  -Data 
-  
-       -NewData
-              - 1+1
-                   -1+1.csv
-              - 2+1
-                  -2+1.csv
-              - 3+1
-                  -3+1.csv
-              - 4+1
-                  -4+1.csv
-              - 5+1
-                 -5+1.csv
-              
-     -OldData
-            - 4+1.csv
-            
-     -GetData.py
-     -GetShotLists.py
-     -ShotList.csv
+To generate the ``.csv`` files for each input configuration in the ``data`` folder, navigate to the ``utilities`` folder. Run ``get_shot_lists.py`` which will take ``knnw_labels.csv`` and output a list of shots in ``shot_list.csv``. Then, run ``get_data.py`` to generate all the ``.csv`` dataset files by inputting ``shot_list.csv``.
 
- 
- -Models
- 
-    -Direct
-   
-          -Baseline_Approach
-              -EfficientNetB0
-                    -EfficientNet_12channel_sliced.ipynb	
-                    -EfficientNet_6channel_sliced.ipynb
-                    -EfficientNet_15channel_sliced.ipynb
-                    -EfficientNet_9channel_sliced.ipynb
-                    -EfficientNet_18channel_sliced.ipynb
-                    
-              _Regnet
-                    -Baseline_Approach_RegNet_12channels_direct.ipynb
-                    -Baseline_Approach_RegNet_15channels_direct.ipynb
-                    -Baseline_Approach_RegNet_18channels_direct.ipynb
-                    -Baseline_Approach_RegNet_6channels_direct.ipynb
-                    -Baseline_Approach_RegNet_9channels_direct.ipynb
-                    
-              -Resnet34
-                    -Baseline_Approach_Resnet34_12channels_direct.ipynb
-                    -Baseline_Approach_Resnet34_15channels_direct.ipynb
-                    -Baseline_Approach_Resnet34_18channels_direct.ipynb
-                    -Baseline_Approach_Resnet34_6channels_direct.ipynb
-                    -Baseline_Approach_Resnet34_9channels_direct.ipynb
-         
-          - Ours_Approach
-              -EfficientNetB0
-                    -EfficientNet_12channels_direct.ipynb
-                    -EfficientNet_6channels_direct.ipynb
-                    -EfficientNet_15channels_direct.ipynb
-                    -EfficientNet_9channels_direct.ipynb
-                    -EfficientNet_18channels_direct.ipynb
-              -RegNet
-                    -RegNet_18channels_direct.ipynb
-                    -RegNet_12channels_direct.ipynb	
-                    -RegNet_6channels_direct.ipynb
-                    -RegNet_15channels_direct.ipynb	
-                    -RegNet_9channels_direct.ipynb
-                    -Data_Augmentation
-                         -RegNet_15channels_direct_DATA6.ipynb
-                         -RegNet_15channels_direct_DATA3.ipynb
-                         -RegNet_15channels_direct_DATA7.ipynb
-                         -RegNet_15channels_direct_DATA4.ipynb
-                         -RegNet_15channels_direct_DATA8.ipynb
-                         -RegNet_15channels_direct_DATA5.ipynb
-              -Resnet34
-                   -Resnet34_12channels_direct.ipynb
-                   -Resnet34_6channels_direct.ipynb
-                   -Resnet34_15channels_direct.ipynb
-                   -Resnet34_9channels_direct.ipynb
-                   -Resnet34_18channels_direct.ipynb
-     
-    -Pairwise
-       -EfficientNet_Pairwise_4+1.ipynb	
-       -Resnet34_Pairwise_4+1.ipynb
+## Models
+The ``models`` folder contains all of the models that are implemented and tested in our experiments. Here is an overview of the ``models`` folder:
+- ``direct``: The models we implemented and trained for our main set of experiments
+    - ``baseline_approach``: The models implemented using the baseline approach
+    - ``proposed_approach``: The models implemented using our proposed approach
+    - ``data_augmentation``: The best model trained using our proposed approach with different data augmentation techniques (.README file provided in the respective folder for more details)
+- ``pairwise``: The models that we attempted using the pairwise prediction approach mentioned in our ablation study
 
 
 
-## Descriptions
+## Code Citations
+Here we would like to attribute the code that we referenced for our model implementations:
 
-1. Data Preprocessing & Datasets
+EfficientNet from scratch reference: https://github.com/WZMIAOMIAO/deep-learning-for-image-processing/tree/master/pytorch_classification/Test9_efficientNet  
+RegNet code reference: https://github.com/facebookresearch/ClassyVision/blob/main/classy_vision/models/regnet.py
 
-Please add descriptions that help the reader locate the relevant implementation of the report in the github
-
-
-2. Experiments & Models
-
-Please add descriptions that help the reader locate the relevant implementation in the github
-
-
-## Citations
-
-EfficientNet from scratch reference: https://github.com/WZMIAOMIAO/deep-learning-for-image-processing/tree/master/pytorch_classification/Test9_efficientNet
 
