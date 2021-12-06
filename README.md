@@ -5,10 +5,9 @@ Team 17: I-Tsun Cheng, Tz-Ruei Liu, Yuanyuan Wang, Tianrun Wang
 This is the official codebase for our project. The code can be structured into two components: ``Data`` and ``Models``.
 
 ## Data
-The ``data`` folder contains the following three folders
+The ``data`` folder contains the following three folders:
 - ``data``: the datasets used for different input sequence configurations for our main experiments (1+1, 2+1, 3+1, 4+1, 5+1)
 - ``utilities``: the data utilties used for generating the datasets
-- ``ablation_data``: the dataset used in our ablation study that contains overlapping data between our training, validation, and test sets
 
 To generate the ``.csv`` files for each input configuration in the ``data`` folder, navigate to the ``utilities`` folder. Run ``get_shot_lists.py`` which will take ``knnw_labels.csv`` and output a list of shots in ``shot_list.csv``. Then, run ``get_data.py`` to generate all the ``.csv`` dataset files by inputting ``shot_list.csv``.
 
